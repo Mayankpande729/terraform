@@ -1,0 +1,150 @@
+
+me@DESKTOP-ERQ6JDN MINGW64 ~/Downloads/EFX
+$ mkdir myprojectdir
+
+me@DESKTOP-ERQ6JDN MINGW64 ~/Downloads/EFX
+$ cd myprojectdir
+
+me@DESKTOP-ERQ6JDN MINGW64 ~/Downloads/EFX/myprojectdir
+$ pwd
+/c/Users/me/Downloads/EFX/myprojectdir
+
+me@DESKTOP-ERQ6JDN MINGW64 ~/Downloads/EFX/myprojectdir
+$ echo " # mytestrepo" >> README.md
+
+me@DESKTOP-ERQ6JDN MINGW64 ~/Downloads/EFX/myprojectdir
+$ ls
+README.md
+
+me@DESKTOP-ERQ6JDN MINGW64 ~/Downloads/EFX/myprojectdir
+$ git commit -m "First Commit"
+fatal: not a git repository (or any of the parent directories): .git
+
+me@DESKTOP-ERQ6JDN MINGW64 ~/Downloads/EFX/myprojectdir
+$ ls
+README.md
+
+me@DESKTOP-ERQ6JDN MINGW64 ~/Downloads/EFX/myprojectdir
+$ git init
+Initialized empty Git repository in C:/Users/me/Downloads/EFX/myprojectdir/.git/
+
+me@DESKTOP-ERQ6JDN MINGW64 ~/Downloads/EFX/myprojectdir (master)
+$ ls
+README.md
+
+me@DESKTOP-ERQ6JDN MINGW64 ~/Downloads/EFX/myprojectdir (master)
+$ ls -lart
+total 5
+drwxr-xr-x 1 me 197121  0 Jan  6 13:37 ../
+-rw-r--r-- 1 me 197121 14 Jan  6 13:38 README.md
+drwxr-xr-x 1 me 197121  0 Jan  6 13:39 ./
+drwxr-xr-x 1 me 197121  0 Jan  6 13:39 .git/
+
+me@DESKTOP-ERQ6JDN MINGW64 ~/Downloads/EFX/myprojectdir (master)
+$ git add README.md
+warning: LF will be replaced by CRLF in README.md.
+The file will have its original line endings in your working directory
+
+me@DESKTOP-ERQ6JDN MINGW64 ~/Downloads/EFX/myprojectdir (master)
+$ git commit -m "First Commit"
+[master (root-commit) debcce2] First Commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README.md
+
+me@DESKTOP-ERQ6JDN MINGW64 ~/Downloads/EFX/myprojectdir (master)
+$ git remote add origin https://github.com/mynk4610/test1.git
+
+me@DESKTOP-ERQ6JDN MINGW64 ~/Downloads/EFX/myprojectdir (master)
+$ git push -u origin master
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 233 bytes | 116.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/mynk4610/test1.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+me@DESKTOP-ERQ6JDN MINGW64 ~/Downloads/EFX/myprojectdir (master)
+$ pwd
+/c/Users/me/Downloads/EFX/myprojectdir
+
+me@DESKTOP-ERQ6JDN MINGW64 ~/Downloads/EFX/myprojectdir (master)
+$  git clone https://github.com/Mayankpande729/terraform.git
+Cloning into 'terraform'...
+remote: Enumerating objects: 43, done.
+remote: Counting objects: 100% (43/43), done.
+remote: Compressing objects: 100% (34/34), done.
+remote: Total 43 (delta 6), reused 24 (delta 0), pack-reused 0
+Unpacking objects: 100% (43/43), done.
+
+me@DESKTOP-ERQ6JDN MINGW64 ~/Downloads/EFX/myprojectdir (master)
+$ ls
+README.md  terraform/
+
+me@DESKTOP-ERQ6JDN MINGW64 ~/Downloads/EFX/myprojectdir (master)
+$ cd terraform
+
+me@DESKTOP-ERQ6JDN MINGW64 ~/Downloads/EFX/myprojectdir/terraform (master)
+$ ls
+gitcommitfile.txt  Jenkinsfile  modules/  np-acc/
+
+me@DESKTOP-ERQ6JDN MINGW64 ~/Downloads/EFX/myprojectdir/terraform (master)
+$ git branch
+* master
+
+me@DESKTOP-ERQ6JDN MINGW64 ~/Downloads/EFX/myprojectdir/terraform (master)
+$ git pull origin master
+From https://github.com/Mayankpande729/terraform
+ * branch            master     -> FETCH_HEAD
+Already up to date.
+
+me@DESKTOP-ERQ6JDN MINGW64 ~/Downloads/EFX/myprojectdir/terraform (master)
+$ git checkout -b narendra
+Switched to a new branch 'narendra'
+
+me@DESKTOP-ERQ6JDN MINGW64 ~/Downloads/EFX/myprojectdir/terraform (narendra)
+$ git status
+On branch narendra
+nothing to commit, working tree clean
+
+me@DESKTOP-ERQ6JDN MINGW64 ~/Downloads/EFX/myprojectdir/terraform (narendra)
+$ git commit -m "Added a new text fiel narendra.md"
+On branch narendra
+nothing to commit, working tree clean
+
+me@DESKTOP-ERQ6JDN MINGW64 ~/Downloads/EFX/myprojectdir/terraform (narendra)
+$ git push origin narendra
+remote: Permission to Mayankpande729/terraform.git denied to mynk4610.
+fatal: unable to access 'https://github.com/Mayankpande729/terraform.git/': The requested URL returned error: 403
+
+me@DESKTOP-ERQ6JDN MINGW64 ~/Downloads/EFX/myprojectdir/terraform (narendra)
+$ git push origin narendra
+Total 0 (delta 0), reused 0 (delta 0)
+remote:
+remote: Create a pull request for 'narendra' on GitHub by visiting:
+remote:      https://github.com/Mayankpande729/terraform/pull/new/narendra
+remote:
+To https://github.com/Mayankpande729/terraform.git
+ * [new branch]      narendra -> narendra
+
+me@DESKTOP-ERQ6JDN MINGW64 ~/Downloads/EFX/myprojectdir/terraform (narendra)
+$ git status
+On branch narendra
+nothing to commit, working tree clean
+
+me@DESKTOP-ERQ6JDN MINGW64 ~/Downloads/EFX/myprojectdir/terraform (narendra)
+$  git clone https://github.com/Mayankpande729/narendra
+Cloning into 'narendra'...
+remote: Repository not found.
+fatal: repository 'https://github.com/Mayankpande729/narendra/' not found
+
+me@DESKTOP-ERQ6JDN MINGW64 ~/Downloads/EFX/myprojectdir/terraform (narendra)
+$ pwd
+/c/Users/me/Downloads/EFX/myprojectdir/terraform
+
+me@DESKTOP-ERQ6JDN MINGW64 ~/Downloads/EFX/myprojectdir/terraform (narendra)
+$ ls
+gitcommitfile.txt  Jenkinsfile  modules/  np-acc/
+
+me@DESKTOP-ERQ6JDN MINGW64 ~/Downloads/EFX/myprojectdir/terraform (narendra)
+

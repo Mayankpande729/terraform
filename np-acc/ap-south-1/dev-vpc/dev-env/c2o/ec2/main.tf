@@ -12,6 +12,6 @@ module "my_ec2" {
   source = "../../../../../../modules/compute/ec2"
 }
 
-module "my_rds" {
-  source = "../../../../../../modules/db"
-}
+#module "my_rds" {
+#  source = "../../../../../../modules/db"
+#}
